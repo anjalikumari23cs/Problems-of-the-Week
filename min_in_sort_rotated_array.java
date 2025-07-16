@@ -10,6 +10,7 @@ public class min_in_sort_rotated_array {
         }
         int low=0;
         int high=n-1;
+        int m=arr[0];
         while(low<high){
             int mid=(low+high)/2;
             if(arr[mid]>arr[high]){
@@ -18,8 +19,9 @@ public class min_in_sort_rotated_array {
             else{
                 high=mid;
             }
-            int m=arr[low];
+            m=arr[low];
         }
+        System.out.print(m);
         sc.close();
     }
 }
